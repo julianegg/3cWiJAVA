@@ -10,7 +10,7 @@ public class Main {
         if (randomNumber <= 20) {
             System.out.println("Mini");
         } else if (randomNumber > 20 && randomNumber < 50) {
-            System.out.println("Medi");
+            System.out.println("Medium");
         } else {
             System.out.println("Max");
         }
