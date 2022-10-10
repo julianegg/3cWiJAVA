@@ -1,28 +1,35 @@
 import java.util.Random;
 
-public class wuerfel {
+public class DiceGame {
     public static void main(String[] args) {
         Random random = new Random();
-        int playerWins= 0;
+        int playerWins = 0;
         int compiWins = 0;
         int unentschieden = 0;
+
+        int countOfGames = 0;
+
         for (int i = 0; i < 6; i++) {
             int randomComputer = random.nextInt(1, 6);
             int randomPlayer = random.nextInt(1, 6);
             System.out.println(randomComputer + "Compi:" + randomPlayer + "Player");
 
             if (randomComputer > randomPlayer) {
-                System.out.println("Sieg für Compi" + randomComputer);
+
+                compiWins = compiWins + 1;
             } else if (randomComputer < randomPlayer) {
-                System.out.println("Sieg für Player" + randomPlayer);
+
+                playerWins = playerWins + 1;
 
             } else {
-                System.out.println("Unentschieden");
+
+                unentschieden = unentschieden + 1;
             }
 
 
         }
 
+        System.out.println(unentschieden + "unentschieden:" + compiWins + "compi:" + playerWins + "player");
 
     }
 }
