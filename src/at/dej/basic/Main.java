@@ -5,21 +5,28 @@ public class Main {
 
         int a = 7;
 
-        Car c1 = new Car();
-        c1.color = "blue";
-        c1.fuelConsumption = 7;
-        c1.serialNumber = "B123";
-        c1.fuelAmount = 20;
-        c1.fuelVolume = 50;
+        Car c1 = new Car(5,"Ferrari","123");
+        c1.setColor("blue");
+
+
         c1.turboBoost();
+        c1.honk();
+        c1.getRemainingRange();
+        System.out.println(c1.getBrand());
 
 
-        Car c2 = new Car();
-        c2.color = "blue";
-        c2.fuelConsumption = 9;
-        c2.serialNumber = "M123";
-        c2.fuelAmount = 80;
 
+//        Car c2 = new Car();
+//        c2.color = "red";
+//        c2.fuelConsumption = 9;
+//        c2.serialNumber = "B1234";
+//        c2.fuelAmount = 25;
+//        c2.fuelVolume = 60;
+//        c2.brand = "mercedes";
+//
+//
+//        Car c3 = new Car( 17,"Opel1", "12345");
+//        System.out.println(c3.serialNumber);
 
 
 

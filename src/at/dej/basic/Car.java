@@ -2,15 +2,24 @@ package at.dej.basic;
 
 public class Car {
 
-    public String color;
-    public String serialNumber;
-    public double fuelConsumption;
-    public double fuelAmount;
-    public int speed;
+    private String color;
+    private String serialNumber;
+    private double fuelConsumption;
+    private double fuelAmount;
+    private int speed;
+    private String brand;
+    private int fuelVolume;
 
-    public int fuelVolume;
+    private int valueOfFuel;
 
-    public int valueOfFuel;
+
+    public Car(int fuelConsumption,String brand, String serialNumber){
+        this.fuelConsumption = fuelConsumption;
+        this.brand = brand;
+        this.serialNumber = serialNumber;
+
+    }
+
 
     public void doBreak() {
         this.speed = 0;
@@ -38,5 +47,80 @@ public class Car {
         } else {
             System.out.println("Not enough fuel to go to Superboost");
         }
+    }
+    public void honk(){
+       int amountOfRepetitions = 2;
+        System.out.println("Tuuut" + "");
+
+    }
+
+
+    public void getRemainingRange() {
+        double getRemainingRange = (fuelAmount - fuelConsumption);
+        System.out.println(getRemainingRange + "Rest-Reichweite");
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public double getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public void setFuelConsumption(double fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public double getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public void setFuelAmount(double fuelAmount) {
+        this.fuelAmount = fuelAmount;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public int getFuelVolume() {
+        return fuelVolume;
+    }
+
+    public void setFuelVolume(int fuelVolume) {
+        this.fuelVolume = fuelVolume;
+    }
+
+    public int getValueOfFuel() {
+        return valueOfFuel;
+    }
+
+    public void setValueOfFuel(int valueOfFuel) {
+        this.valueOfFuel = valueOfFuel;
     }
 }
