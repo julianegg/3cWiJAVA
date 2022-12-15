@@ -2,6 +2,8 @@ package at.dej.basic;
 
 public class Car {
 
+    private Engine engine;
+    public boolean setSerialNumber;
     private String color;
     private String serialNumber;
     private double fuelConsumption;
@@ -13,11 +15,11 @@ public class Car {
     private int valueOfFuel;
 
 
-    public Car(int fuelConsumption,String brand, String serialNumber){
+    public Car(Engine engine,double fuelConsumption, String brand, String serialNumber) {
         this.fuelConsumption = fuelConsumption;
         this.brand = brand;
         this.serialNumber = serialNumber;
-
+        this.engine = engine;
     }
 
 
@@ -48,8 +50,9 @@ public class Car {
             System.out.println("Not enough fuel to go to Superboost");
         }
     }
-    public void honk(){
-       int amountOfRepetitions = 2;
+
+    public void honk() {
+        int amountOfRepetitions = 2;
         System.out.println("Tuuut" + "");
 
     }
@@ -123,4 +126,5 @@ public class Car {
     public void setValueOfFuel(int valueOfFuel) {
         this.valueOfFuel = valueOfFuel;
     }
+
 }
