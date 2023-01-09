@@ -4,8 +4,9 @@ public class Main {
     public static void main(String[] args) {
 
         int a = 7;
+        Engine e1 = new Engine(100, Engine.TYP.DIESEL);
 
-       Car c1 = new Car(5,9,"Ferrari","123");
+       Car c1 = new Car(e1,9,"Ferrari","123");
         c1.setColor("blue");
 
 
@@ -24,8 +25,7 @@ public class Main {
         //    c2.brand = "mercedes";
 
 
-        Car c3 = new Car(17, "Opel1", "12345");
-        System.out.println(c3.setSerialNumber);
+
 
 
     }

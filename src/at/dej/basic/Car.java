@@ -15,11 +15,12 @@ public class Car {
     private int valueOfFuel;
 
 
-    public Car(Engine engine,double fuelConsumption, String brand, String serialNumber) {
+    public Car(Engine engine, double fuelConsumption, String brand, String serialNumber) {
         this.fuelConsumption = fuelConsumption;
         this.brand = brand;
         this.serialNumber = serialNumber;
         this.engine = engine;
+        System.out.println("ich bin" + this.brand + "und habe die Farbe" + this.color + "und habe" + this.getEngine().getHorsePower() + " ps");
     }
 
 
@@ -127,4 +128,11 @@ public class Car {
         this.valueOfFuel = valueOfFuel;
     }
 
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
 }

@@ -1,7 +1,7 @@
 package at.dej.basic;
 
 public class Engine {
-    private enum TYP {DIESEL, GAS};
+    public enum TYP {DIESEL, GAS};
     private int horsePower;
     private TYP type; //Diesel oder Benzin
 
