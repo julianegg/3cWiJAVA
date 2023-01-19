@@ -1,3 +1,5 @@
+package at.dej.begin;
+
 public class stringHelper {
     public static void main(String[] args) {
         int result = countletters("hans", 'a');

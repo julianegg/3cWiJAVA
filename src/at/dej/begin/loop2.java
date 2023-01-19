@@ -1,3 +1,5 @@
+package at.dej.begin;
+
 import java.util.Random;
 public class loop2 {
     public static void main(String[] args){

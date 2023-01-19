@@ -1,4 +1,4 @@
-package at.dej.basic;
+package at.dej.OO.cars;
 
 public class Engine {
     public enum TYP {DIESEL, GAS};

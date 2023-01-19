@@ -1,4 +1,5 @@
-import java.util.Random;
+package at.dej.begin;
+
 import java.util.Scanner;
 
 public class bankautomat {

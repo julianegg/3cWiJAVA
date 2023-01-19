@@ -1,4 +1,4 @@
-package at.dej.basic;
+package at.dej.OO.cars;
 
 public class Car {
 
@@ -20,7 +20,7 @@ public class Car {
         this.brand = brand;
         this.serialNumber = serialNumber;
         this.engine = engine;
-        System.out.println("ich bin" + this.brand + "und habe die Farbe" + this.color + "und habe" + this.getEngine().getHorsePower() + " ps");
+        System.out.println("ich bin " + this.brand  + " und habe die Farbe " + this.color + " und habe " + this.getEngine().getHorsePower() + " ps ");
     }
 
 

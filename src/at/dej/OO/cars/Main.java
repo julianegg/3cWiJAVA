@@ -1,12 +1,12 @@
-package at.dej.basic;
+package at.dej.OO.cars;
 
 public class Main {
     public static void main(String[] args) {
 
-        int a = 7;
+
         Engine e1 = new Engine(100, Engine.TYP.DIESEL);
 
-       Car c1 = new Car(e1,9,"Ferrari","123");
+       Car c1 = new Car(e1,50,"Ferrari","123");
         c1.setColor("blue");
 
 
