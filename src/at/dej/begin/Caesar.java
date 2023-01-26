@@ -2,7 +2,7 @@ package at.dej.begin;
 
 import java.util.Scanner;
 
-public class caesar {
+public class Caesar {
     private static int verschiebung;
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package at.dej.begin;
 
-public class stringHelper {
+public class StringHelper {
     public static void main(String[] args) {
         int result = countletters("hans", 'a');
         System.out.println(result);

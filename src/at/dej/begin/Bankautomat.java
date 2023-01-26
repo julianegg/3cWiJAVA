@@ -2,7 +2,7 @@ package at.dej.begin;
 
 import java.util.Scanner;
 
-public class bankautomat {
+public class Bankautomat {
     public static void main(String[] args) {
         int balance = 0;
         boolean isFinished = false;

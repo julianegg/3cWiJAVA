@@ -1,7 +1,7 @@
 package at.dej.begin;
 
 import java.util.Random;
-public class switchStatment {
+public class SwitchStatment {
     public static void main(String[] args) {
 
 

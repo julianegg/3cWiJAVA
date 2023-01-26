@@ -1,13 +1,13 @@
 package at.dej.begin;
 
 import java.util.Random;
-public class loop1 {
+public class Loop2 {
     public static void main(String[] args){
 
         Random random = new Random();
         int randomNumber = random.nextInt(10);
         int a = 0;
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 2; i <= 1000; i+=2) {
             a = a + i;
             System.out.println(i);
         }
