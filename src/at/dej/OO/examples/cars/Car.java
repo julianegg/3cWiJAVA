@@ -9,27 +9,49 @@ public class Car {
 
     private int maxSpeed;
 
-    private int basicConsumption;
+    private double fuelConsumption;
 
     private producer producer;
+    private double carPrice;
+
+    private double kmStood;
 
 
-    public Car(String brand, String color, int basicPrice, int maxSpeed, int basicConsumption, producer producer) {
+
+    public Car(String brand, String color, int basicPrice, int maxSpeed, double fuelConsumption, producer producer, double kmStood) {
         this.brand = brand;
         this.color = color;
         this.basicPrice = basicPrice;
         this.maxSpeed = maxSpeed;
-        this.basicConsumption = basicConsumption;
+        this.fuelConsumption = fuelConsumption;
         this.producer = producer;
-
-
-
+        this.kmStood = kmStood;
     }
+    public double carPrice(){
+        this.producer.getDiscount();
+        double carPrice = this.basicPrice - this.basicPrice/ 100 * this.producer.getDiscount();
+        return carPrice;
+    }
+
+
 
     public Car(int basicPrice) {
         this.basicPrice = basicPrice;
 
     }
+
+    public void drive(){
+    kmStood = kmStood + 25000;
+    if(kmStood > 50000){
+        this.fuelConsumption = this.fuelConsumption * 1.098;
+    }
+    else{
+        this.fuelConsumption = this.fuelConsumption;
+
+    }
+
+    }
+     return fuelConsumption;
 
     public String getBrand() {
         return brand;
@@ -63,17 +85,44 @@ public class Car {
         this.maxSpeed = maxSpeed;
     }
 
-    public int getBasicConsumption() {
-        return basicConsumption;
+    public int getFuelConsumptionConsumption() {
+        return fuelConsumption;
     }
 
     public void setBasicConsumption(int basicConsumption) {
-        this.basicConsumption = basicConsumption;
+        this.fuelConsumption = fuelConsumption;
     }
 
 
+    public double getCarPrice() {
+        return carPrice;
+    }
 
+    public void setCarPrice(double carPrice) {
+        this.carPrice = carPrice;
+    }
 
+    public int getFuelConsumption() {
+        return fuelConsumption;
+    }
 
+    public void setFuelConsumption(int fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
 
+    public at.dej.OO.examples.cars.producer getProducer() {
+        return producer;
+    }
+
+    public void setProducer(at.dej.OO.examples.cars.producer producer) {
+        this.producer = producer;
+    }
+
+    public double getKmStood() {
+        return kmStood;
+    }
+
+    public void setKmStood(double kmStood) {
+        this.kmStood = kmStood;
+    }
 }

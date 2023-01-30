@@ -4,12 +4,16 @@ public class producer {
     private String name;
     private String orgin;
 
-    private int discount;
+    private double discount;
 
-    public producer(String name, String Orgin) {
+    private double carPrice;
+
+    public producer(String name, String Orgin, double discount) {
         this.name = name;
         this.orgin = orgin;
+        this.discount = discount;
     }
+
 
     public String getName() {
         return name;
@@ -19,7 +23,7 @@ public class producer {
         return orgin;
     }
 
-    public int getDiscount() {
+    public double getDiscount() {
         return discount;
     }
 
@@ -31,7 +35,9 @@ public class producer {
         this.orgin = orgin;
     }
 
-    public void setDiscount(int discount) {
+    public void setDiscount(double discount) {
         this.discount = discount;
     }
+
+
 }
