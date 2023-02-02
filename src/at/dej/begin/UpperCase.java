@@ -2,7 +2,7 @@ package at.dej.begin;
 
 import java.util.Scanner;
 
-public class upperCase {
+public class UpperCase {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

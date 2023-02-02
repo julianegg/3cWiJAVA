@@ -10,6 +10,11 @@ public class Main {
 
         System.out.println(p1.getDiscount() + "%");
         System.out.println(c1.carPrice() + "€");
+        System.out.println(c1.CarConsumption());
+        System.out.println(c1.drive());
+        System.out.println(c1.drive());
+        System.out.println(c1.drive());
+        System.out.println(c1.CarConsumption());
     }
 
 }

@@ -40,8 +40,12 @@ public class Car {
 
     }
 
-    public void drive(){
-    kmStood = kmStood + 25000;
+    public double drive() {
+        kmStood = kmStood + 25000;
+        return kmStood;
+    }
+
+    public double CarConsumption(){
     if(kmStood > 50000){
         this.fuelConsumption = this.fuelConsumption * 1.098;
     }
@@ -49,9 +53,9 @@ public class Car {
         this.fuelConsumption = this.fuelConsumption;
 
     }
-
+        return fuelConsumption;
     }
-     return fuelConsumption;
+
 
     public String getBrand() {
         return brand;
@@ -85,7 +89,7 @@ public class Car {
         this.maxSpeed = maxSpeed;
     }
 
-    public int getFuelConsumptionConsumption() {
+    public double getFuelConsumptionConsumption() {
         return fuelConsumption;
     }
 
@@ -102,7 +106,7 @@ public class Car {
         this.carPrice = carPrice;
     }
 
-    public int getFuelConsumption() {
+    public double getFuelConsumption() {
         return fuelConsumption;
     }
 
