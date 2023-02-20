@@ -2,16 +2,23 @@ package at.dej.OO.lamp;
 
 public class Elements {
     private String name;
-    private String powerConsumption;
+    private double powerConsumption;
     private String color;
-    private String status;
-    public enum status{On, Off};
+    private enum status{on,off}
 
-    public Elements(String name, String powerConsumption, String color, String status) {
+    private  Elements.TYP.typ;
+
+
+
+    public Elements(String name, double powerConsumption, String color, String  status) {
         this.name = name;
         this.powerConsumption = powerConsumption;
         this.color = color;
         this.status = status;
+    }
+
+    public void turnOn() {
+
     }
 
     public String getName() {
@@ -22,11 +29,11 @@ public class Elements {
         this.name = name;
     }
 
-    public String getPowerConsumption() {
+    public double getPowerConsumption() {
         return powerConsumption;
     }
 
-    public void setPowerConsumption(String powerConsumption) {
+    public void setPowerConsumption(double powerConsumption) {
         this.powerConsumption = powerConsumption;
     }
 
