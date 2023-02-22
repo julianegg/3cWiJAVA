@@ -4,9 +4,15 @@ public class Elements {
     private String name;
     private double powerConsumption;
     private String color;
-    private enum status{on,off}
 
-    private  Elements.TYP.typ;
+    public enum TYP {on,off}
+
+    private  TYP typ;
+    public Elements() {
+        this.typ = typ;
+    }
+
+
 
 
 
@@ -14,7 +20,7 @@ public class Elements {
         this.name = name;
         this.powerConsumption = powerConsumption;
         this.color = color;
-        this.status = status;
+        this.typ = getTyp();
     }
 
     public void turnOn() {
@@ -45,11 +51,12 @@ public class Elements {
         this.color = color;
     }
 
-    public String getStatus() {
-        return status;
+
+    public TYP getTyp() {
+        return typ;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setTyp(TYP typ) {
+        this.typ = typ;
     }
 }
