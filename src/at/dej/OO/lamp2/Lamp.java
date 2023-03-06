@@ -21,7 +21,19 @@ public class Lamp {
          elements.setOn(true);
       }
    }
+   public void getOverallPowerUsage(){
+    int consumption = 1;
+    for(Element elements : this.elements){
+       consumption += elements.getConsumption();
+    }
 
+   }
+
+   public void printNameOfElements(){
+      for(Element element : this.elements);
+      System.out.println(getClass().getName());
+
+   }
 
 
 

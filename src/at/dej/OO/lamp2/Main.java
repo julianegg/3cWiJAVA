@@ -14,8 +14,10 @@ public class Main {
         l1.addElements(e2);
 
         l1.turnAllOn();
+        l1.turnAllOn();
 
-        System.out.println(e1.getConsumption());
-        System.out.println(e1.isOn());
+
+
+        l1.getOverallPowerUsage();
     }
 }

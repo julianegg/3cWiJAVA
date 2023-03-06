@@ -33,12 +33,9 @@ public class Element {
         }
     }
 
-    public void addLightElement(){
 
-    }
 
-    public void getOverallConsumption(){
-    }
+
 
 
     public boolean isOn() {
