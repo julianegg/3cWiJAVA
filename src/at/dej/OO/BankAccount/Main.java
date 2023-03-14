@@ -13,6 +13,7 @@ public class Main {
         sa.withdraw(50);
         System.out.println(sa.getBalance());
 
+        CreditAccount cra = new CreditAccount();
 
     }
 
