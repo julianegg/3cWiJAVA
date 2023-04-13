@@ -8,6 +8,12 @@ public class Main {
         Camera cam = new Camera();
 
         Phone phone = new Phone(sim, cam, card );
+        phone.doCall(" 23242424");
+        phone.takePicture();
+        phone.takePicture();
+        phone.printAllFiles();
+
+
 
 
     }

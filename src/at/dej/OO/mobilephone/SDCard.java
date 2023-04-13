@@ -14,4 +14,8 @@ public class SDCard {
     public void save(PhoneFile file){
         files.add(file);
     }
+
+    public List<PhoneFile> getFiles() {
+        return files;
+    }
 }
