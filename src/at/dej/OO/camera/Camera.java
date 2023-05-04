@@ -8,6 +8,8 @@ public class Camera {
     private SDCard sdCard;
     private Producer producer;
 
+    private int FileNumber = 0;
+
     public Camera(double pixel, double weight, String color, Lens lens, SDCard sdCard, Producer producer) {
         this.pixel = pixel;
         this.weight = weight;

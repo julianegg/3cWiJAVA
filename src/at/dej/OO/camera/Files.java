@@ -1,12 +1,19 @@
 package at.dej.OO.camera;
 
-import at.dej.OO.mobilephone.PhoneFile;
+
 
 public class Files {
+
+    private String name;
+
+    private enum FILE_SIZE{klein, mittel, groß};
+
     private int fileNUmber = 0;
 
-    public PhoneFile takePicture(){
-        PhoneFile file = new PhoneFile("png","pic" + fileNUmber,1000);
+
+
+    public Files takePicture(){
+        Files file = new Files("png","pic" + fileNUmber,1000);
         fileNUmber ++;
         return file;
     }

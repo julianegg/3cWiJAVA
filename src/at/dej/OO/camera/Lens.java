@@ -1,9 +1,11 @@
 package at.dej.OO.camera;
 
-public class Lens extends Producer{
-    public Lens(String name, String country, int focalLenght) {
-        super(name, country);
+public class Lens{
+    private Producer producer;
+    private int focalLenght;
+
+    public Lens(Producer producer, int focalLenght) {
+        this.producer = producer;
         this.focalLenght = focalLenght;
     }
-    private int focalLenght;
 }
